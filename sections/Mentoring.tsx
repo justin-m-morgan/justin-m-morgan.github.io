@@ -48,31 +48,31 @@ const testimonials: Testimonial[] = [
 ];
 
 const Testimonial = ({ avatar, feedbackLink, linkedIn, name, position, review }: Testimonial) => (
-    <a key={name} href={feedbackLink} className="cursor-pointer">
-        <Card>
-            <div className="flex items-center space-x-6 mb-4">
-                <Image
-                    className="h-28 w-28 object-cover object-center rounded-full"
-                    src={avatar}
-                    width="120px"
-                    height="120px"
-                    alt={`${name} Profile Picture`}
-                />
-                <div className="">
-                    <p className="text-xl text-gray-700 font-normal mb-1">{name}</p>
-                    {position ? (
-                        <a href={linkedIn} className="text-base  text-blue-600 font-normal">
-                            {position}
-                        </a>
-                    ) : (
-                        <p className="text-gray-400">No position listed</p>
-                    )}
+    <Card>
+        <div className="grid grid-cols-6 gap-8 items-start mb-4">
+            <Image
+                className="object-cover object-center rounded-full"
+                src={avatar}
+                width="120px"
+                height="120px"
+                alt={`${name} Profile Picture`}
+            />
+            <div className="col-span-5">
+                <p className="text-xl text-gray-700 font-normal mb-1">{name}</p>
+                {position ? (
+                    <a href={linkedIn} className="text-base  text-blue-600 font-normal">
+                        {position}
+                    </a>
+                ) : (
+                    <p className="text-gray-400">No position listed</p>
+                )}
 
-                    <p className="text-gray-700 leading-normal font-normal text-base">{review}</p>
-                </div>
+                <a key={name} href={feedbackLink} className="cursor-pointer text-gray-900 py-2">
+                    <p className="text-gray-700 text-lg pt-2 leading-normal font-normal pb-3">{review}</p>
+                </a>
             </div>
-        </Card>
-    </a>
+        </div>
+    </Card>
 );
 
 const Mentoring = () => (
