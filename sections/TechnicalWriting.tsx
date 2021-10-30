@@ -48,7 +48,13 @@ const articles: DevToArticle[] = [
 const TechnicalWriting = () => (
     <div className="grid grid-cols-2 gap-8">
         {articles.map((article) => (
-            <a key={article.id} href={article.canonical_url} className="cursor-pointer flex">
+            <a
+                key={article.id}
+                href={article.canonical_url}
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer flex"
+            >
                 <Card className="grid grid-cols-9 grid-flow-row-dense">
                     <FontAwesomeIcon icon={faDev} className="h-12 row-span-2" />
                     <h3 className="text-xl font-bold col-span-8">{article.title}</h3>
