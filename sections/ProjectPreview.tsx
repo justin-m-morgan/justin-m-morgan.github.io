@@ -36,7 +36,13 @@ const ProjectPreview = ({
                     config={{
                         file: {
                             attributes: {
-                                style: { height: '100%', width: '100%', objectFit: 'cover', borderRadius: '8px' },
+                                style: {
+                                    height: '100%',
+                                    width: '100%',
+                                    objectFit: 'contain',
+                                    objectPosition: 'center center',
+                                    borderRadius: '8px',
+                                },
                             },
                         },
                     }}

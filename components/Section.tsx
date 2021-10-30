@@ -5,9 +5,9 @@ interface SectionProps {
     heading?: string;
 }
 const Section = ({ className, children, heading, id }: SectionProps) => (
-    <section id={id} className="text-white px-48 pt-32">
+    <section id={id} className="text-white md:px-24 lg:px-48 pt-32">
         {heading && (
-            <h2 className={`text-4xl text-gray-700 font-bold uppercase tracking-widest pb-16 ${className}`}>
+            <h2 className={`text-2xl lg:text-4xl text-gray-700 font-bold uppercase tracking-widest pb-16 ${className}`}>
                 {headingDecorator(heading)}
             </h2>
         )}

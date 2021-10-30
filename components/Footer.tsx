@@ -3,6 +3,7 @@ import Card from './Card';
 import ContactForm from './ContactForm';
 import Modal from './Modal';
 import { Dev, Github, Linkedin, Twitter } from './SocialMedia';
+import { Button } from './Button';
 
 const Icon = ({ children, color }: { children: React.ReactNode; color: string }) => (
     <button
@@ -19,22 +20,24 @@ const Footer = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-            <footer id="footer" className="relative px-48 pb-48 grid grid-cols-2 gap-8">
+            <footer
+                id="footer"
+                className="px-24 lg:px-48 pb-24 lg:pb-48 grid grid-cols-2 grid-rows-2 grid-flow-col justify-items-center items-center"
+            >
                 <Modal title="Contact Me!" isOpen={isOpen} setIsOpen={setIsOpen}>
                     <ContactForm />
                 </Modal>
-                <div className="">
-                    <h4 className="text-3xl fonat-semibold text-blueGray-700">Let&apos;s keep in touch!</h4>
-                    <h5 className="text-lg mt-0 mb-2 text-blueGray-600">Find me on any of these platforms:</h5>
-                    <div className="mt-6 lg:mb-0 mb-6 flex space-x-4">
-                        {icons.map((Icon, i) => (
-                            <Icon key={i} />
-                        ))}
-                    </div>
+
+                <h4 className="text-lg mt-0  text-blueGray-600">Find me on any of these platforms</h4>
+
+                <div className="lg:mb-0 flex space-x-4">
+                    {icons.map((Icon, i) => (
+                        <Icon key={i} />
+                    ))}
                 </div>
-                <Card>
-                    <button onClick={() => setIsOpen(true)}>Open modal</button>
-                </Card>
+
+                <h4 className="text-lg">Or send me an email!</h4>
+                <Button onClick={() => setIsOpen(true)}>Send Message</Button>
             </footer>
         </>
     );

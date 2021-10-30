@@ -57,12 +57,12 @@ const OpenSource = () => (
                         <h3 className="text-2xl font-bold pb-2">{contribution.organization}</h3>
                         <p className="text-sm text-gray-700">{contribution.organizationBlurb}</p>
                     </div>
-                    <ul>
+                    <ul className="space-y-2">
                         {contribution.tickets.map(({ description, ghStatus, issueUrl }) => (
                             <li key={description} className="flex justify-between">
-                                &rarr; {description} ({ghStatus})
+                                &rarr; {description}
                                 <a href={issueUrl} target="_blank" rel="noreferrer">
-                                    <i className="fab fa-github"></i> View on Github
+                                    <i className="fab fa-github"></i> Issue
                                 </a>
                             </li>
                         ))}

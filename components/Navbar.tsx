@@ -17,7 +17,7 @@ interface MainItemsProps {
     clickHandler: (id: string) => void;
 }
 const MainItems = () => (
-    <ul className="hidden md:flex ml-auto font-semibold font-heading space-x-12">
+    <ul className="hidden md:flex ml-auto font-semibold font-heading space-x-6 lg:space-x-12">
         {links.map((link) => (
             <li key={link.label}>
                 <Link href={`/#${link.to}`}>
@@ -44,7 +44,7 @@ function Navbar({}: {}) {
     return (
         <nav className="sticky top-0 z-10 filter drop-shadow-2xl">
             <div className="text-white w-screen ">
-                <div className="px-5 xl:px-48 py-6 flex w-full items-center bg-gray-900">
+                <div className="px-5 px-24 lg:px-48 py-6 flex w-full items-center bg-gray-900">
                     <Logo />
                     <MainItems />
                 </div>

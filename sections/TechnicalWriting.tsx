@@ -56,8 +56,8 @@ const TechnicalWriting = () => (
                 className="cursor-pointer flex"
             >
                 <Card className="grid grid-cols-9 grid-flow-row-dense">
-                    <FontAwesomeIcon icon={faDev} className="h-12 row-span-2" />
-                    <h3 className="text-xl font-bold col-span-8">{article.title}</h3>
+                    <FontAwesomeIcon icon={faDev} className="h-8 lg:h-12 lg:row-span-2" />
+                    <h3 className="text-lg lg:text-xl font-bold col-span-8 pb-4">{article.title}</h3>
                     <p className="col-span-8 pb-4">{article.description}</p>
                     <div className="flex justify-end items-center col-span-9 text-xl space-x-4">
                         <FontAwesomeIcon icon={faEye} className="h-6" /> <span>{article.page_views_count}</span>
