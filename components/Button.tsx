@@ -7,10 +7,11 @@ export const OutlineButtonStyles =
 interface ButtonProps {
     children: React.ReactNode;
     className?: string;
-    onClick: () => void;
+    type?: 'button' | 'submit';
+    onClick?: () => void;
 }
-const Button = ({ children, className, onClick = () => {} }: ButtonProps) => (
-    <button onClick={onClick} className={`${OutlineButtonStyles} ${className}`}>
+const Button = ({ children, className, onClick = () => {}, type = 'button' }: ButtonProps) => (
+    <button type={type} onClick={onClick} className={`${OutlineButtonStyles} ${className}`}>
         {children}
     </button>
 );
