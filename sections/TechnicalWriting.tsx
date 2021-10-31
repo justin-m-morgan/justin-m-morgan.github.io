@@ -46,7 +46,7 @@ const articles: DevToArticle[] = [
 ];
 
 const TechnicalWriting = () => (
-    <div className="grid grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-2 gap-8">
         {articles.map((article) => (
             <a
                 key={article.id}

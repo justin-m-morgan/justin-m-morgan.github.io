@@ -47,7 +47,7 @@ const contributions: Contribution[] = [
 
 const OpenSource = () => (
     <div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
             {contributions.map((contribution) => (
                 <Card
                     key={contribution.organization}
@@ -59,9 +59,9 @@ const OpenSource = () => (
                     </div>
                     <ul className="space-y-2">
                         {contribution.tickets.map(({ description, ghStatus, issueUrl }) => (
-                            <li key={description} className="flex justify-between">
+                            <li key={description} className="lg:flex justify-between">
                                 &rarr; {description}
-                                <a href={issueUrl} target="_blank" rel="noreferrer">
+                                <a href={issueUrl} target="_blank" rel="noreferrer" className="block">
                                     <i className="fab fa-github"></i> Issue
                                 </a>
                             </li>
