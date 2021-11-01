@@ -55,11 +55,14 @@ const TechnicalWriting = () => (
                 rel="noreferrer"
                 className="cursor-pointer flex"
             >
-                <Card className="grid grid-cols-9 grid-flow-row-dense">
-                    <FontAwesomeIcon icon={faDev} className="h-8 lg:h-12 lg:row-span-2" />
-                    <h3 className="text-lg lg:text-xl font-bold col-span-8 pb-4">{article.title}</h3>
+                <Card className="flex flex-col">
+                    <div className="flex items-center space-x-4 pb-4 md:pb-0">
+                        <FontAwesomeIcon icon={faDev} className="h-8 md:h-16" />
+                        <h3 className="text-lg lg:text-xl font-bold col-span-5">{article.title}</h3>
+                    </div>
+
                     <p className="col-span-8 pb-4">{article.description}</p>
-                    <div className="flex justify-end items-center col-span-9 text-xl space-x-4">
+                    <div className="mt-auto flex justify-end items-center col-span-9 text-xl space-x-4">
                         <FontAwesomeIcon icon={faEye} className="h-6" /> <span>{article.page_views_count}</span>
                     </div>
                 </Card>
