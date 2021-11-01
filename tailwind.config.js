@@ -13,6 +13,9 @@ module.exports = {
                     '100%': { transform: 'translateY(10%)' },
                 },
             },
+            maxWidth: {
+                '8xl': '88rem',
+            },
         },
     },
     variants: {
