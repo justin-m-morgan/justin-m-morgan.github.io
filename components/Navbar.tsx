@@ -55,9 +55,11 @@ function Navbar({}: {}) {
     return (
         <nav className="sticky top-0 z-10 filter drop-shadow-2xl">
             <div className="text-white w-screen">
-                <div className="relative px-4 md:px-8 lg:px-48 py-6 flex w-full justify-between items-center bg-gray-900">
-                    <Logo />
-                    <MainItems />
+                <div className="relative bg-gray-900">
+                    <div className="px-4 md:px-8 lg:px-36 xl:px-48 max-w-8xl mx-auto py-6 flex w-full justify-between items-center">
+                        <Logo />
+                        <MainItems />
+                    </div>
                     <Popover className="md:hidden">
                         <Popover.Button>
                             <Hamburger />

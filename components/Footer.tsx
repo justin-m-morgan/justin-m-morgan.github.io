@@ -21,7 +21,7 @@ const Footer = () => {
         <>
             <footer
                 id="footer"
-                className="px-24 md:px-8 lg:px-48 pb-24 lg:pb-48 flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 grid-flow-col items-center space-y-4 md:space-y-0 text-center"
+                className="px-24 md:px-8 lg:px-36 xl:px-48 max-w-8xl mx-auto pb-24 lg:pb-48 flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 grid-flow-col items-center space-y-4 md:space-y-0 text-center"
             >
                 <Modal title="Contact Me!" isOpen={isOpen} setIsOpen={setIsOpen}>
                     <ContactForm />
