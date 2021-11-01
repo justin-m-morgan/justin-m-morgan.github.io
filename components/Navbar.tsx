@@ -59,30 +59,31 @@ function Navbar({}: {}) {
                     <div className="px-4 md:px-8 lg:px-36 xl:px-48 max-w-8xl mx-auto py-6 flex w-full justify-between items-center">
                         <Logo />
                         <MainItems />
+
+                        <Popover className="md:hidden">
+                            <Popover.Button>
+                                <Hamburger />
+                            </Popover.Button>
+                            <Transition
+                                enter="transition duration-200 ease-out"
+                                enterFrom="opacity-0"
+                                enterTo="opacity-100"
+                                leave="transition duration-200 ease-out"
+                                leaveFrom="opacity-100"
+                                leaveTo="opacity-0"
+                            >
+                                <Popover.Panel className="absolute left-0 right-0 z-10 p-4 bg-gray-900 rounded-lg transform translate-y-2">
+                                    <div className="flex flex-col items-end text-xl space-y-3">
+                                        {links.map((link) => (
+                                            <Popover.Button key={link.to} as="a" href={link.to}>
+                                                {link.label}
+                                            </Popover.Button>
+                                        ))}
+                                    </div>
+                                </Popover.Panel>
+                            </Transition>
+                        </Popover>
                     </div>
-                    <Popover className="md:hidden">
-                        <Popover.Button>
-                            <Hamburger />
-                        </Popover.Button>
-                        <Transition
-                            enter="transition duration-200 ease-out"
-                            enterFrom="opacity-0"
-                            enterTo="opacity-100"
-                            leave="transition duration-200 ease-out"
-                            leaveFrom="opacity-100"
-                            leaveTo="opacity-0"
-                        >
-                            <Popover.Panel className="absolute left-0 right-0 z-10 p-4 bg-gray-900 rounded-lg transform translate-y-2">
-                                <div className="flex flex-col items-end text-xl space-y-3">
-                                    {links.map((link) => (
-                                        <Popover.Button key={link.to} as="a" href={link.to}>
-                                            {link.label}
-                                        </Popover.Button>
-                                    ))}
-                                </div>
-                            </Popover.Panel>
-                        </Transition>
-                    </Popover>
                 </div>
             </div>
         </nav>
