@@ -6,7 +6,7 @@ import { FormEvent } from 'react';
 import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons';
 
 const labelClasses = 'font-semibold';
-const inputClasses = 'mb-3 py-3 px-4 bg-gray-50 rounded-xl shadow-md';
+const inputClasses = 'mb-3 py-3 px-4 bg-gray-900 text-gray-50 rounded-xl shadow-lg';
 
 interface FormProps {
     submit: (event: FormEvent<HTMLFormElement>) => void;
