@@ -4,11 +4,11 @@ import { JobBoardPreview } from '../pages/projects/job-board';
 import ProjectPreview from './ProjectPreview';
 
 const Projects = () => (
-    <>
+    <div className="md:space-y-24">
         <ProjectPreview {...ClockAppPreview} />
         <ProjectPreview {...JobBoardPreview} />
         <ProjectPreview {...OrderSummaryPreview} />
-    </>
+    </div>
 );
 
 export default Projects;

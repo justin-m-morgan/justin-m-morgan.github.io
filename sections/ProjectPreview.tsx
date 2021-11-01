@@ -31,8 +31,8 @@ const ProjectPreview = ({
     previewImgWidth,
     description,
 }: ProjectPreviewProps) => (
-    <div className="grid lg:grid-cols-2 gap-8 mb-8">
-        <div className="rounded-lg overflow-hidden max-w-lg mx-auto flex justify-center items-center">
+    <div className="grid lg:grid-cols-2 gap-8 mb-8 max-w-lg mx-auto">
+        <div className="rounded-lg overflow-hidden   flex justify-center items-center">
             {previewVideoUrl ? (
                 <VideoPlayer src={previewVideoUrl} className="rounded-lg overflow-hidden" />
             ) : (
