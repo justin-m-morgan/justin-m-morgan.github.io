@@ -6,7 +6,15 @@ interface VideoPlayerProps {
     src: string;
 }
 const VideoPlayer = ({ className, src }: VideoPlayerProps) => (
-    <video src={src} preload="auto" autoPlay={true} loop={true} muted={true} className={className}></video>
+    <video
+        src={src}
+        playsInline={true}
+        preload="auto"
+        autoPlay={true}
+        loop={true}
+        muted={true}
+        className={className}
+    ></video>
 );
 export interface ProjectPreviewProps {
     caseStudyPath: string;
