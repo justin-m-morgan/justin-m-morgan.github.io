@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Popover } from '@headlessui/react';
+import { Popover, Transition } from '@headlessui/react';
 
 const Logo = () => (
     <Link href="/#intro">
@@ -62,15 +62,24 @@ function Navbar({}: {}) {
                         <Popover.Button>
                             <Hamburger />
                         </Popover.Button>
-                        <Popover.Panel className="absolute left-0 right-0 z-10 p-4 bg-gray-900 rounded-lg">
-                            <div className="flex flex-col items-end">
-                                {links.map((link) => (
-                                    <Popover.Button key={link.to} as="a" href={link.to}>
-                                        {link.label}
-                                    </Popover.Button>
-                                ))}
-                            </div>
-                        </Popover.Panel>
+                        <Transition
+                            enter="transition duration-200 ease-out"
+                            enterFrom="opacity-0"
+                            enterTo="opacity-100"
+                            leave="transition duration-200 ease-out"
+                            leaveFrom="opacity-100"
+                            leaveTo="opacity-0"
+                        >
+                            <Popover.Panel className="absolute left-0 right-0 z-10 p-4 bg-gray-900 rounded-lg transform translate-y-2">
+                                <div className="flex flex-col items-end text-xl space-y-3">
+                                    {links.map((link) => (
+                                        <Popover.Button key={link.to} as="a" href={link.to}>
+                                            {link.label}
+                                        </Popover.Button>
+                                    ))}
+                                </div>
+                            </Popover.Panel>
+                        </Transition>
                     </Popover>
                 </div>
             </div>
