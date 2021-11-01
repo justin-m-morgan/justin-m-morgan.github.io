@@ -21,7 +21,7 @@ const Footer = () => {
         <>
             <footer
                 id="footer"
-                className="px-24 lg:px-48 pb-24 lg:pb-48 flex flex-col space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 grid-flow-col justify-items-center items-center"
+                className="px-24 md:px-8 lg:px-48 pb-24 lg:pb-48 flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 grid-flow-col items-center space-y-4 md:space-y-0 text-center"
             >
                 <Modal title="Contact Me!" isOpen={isOpen} setIsOpen={setIsOpen}>
                     <ContactForm />
@@ -29,14 +29,16 @@ const Footer = () => {
 
                 <h4 className="text-center text-lg text-gray-50">Find me on any of these platforms</h4>
 
-                <div className="lg:mb-0 flex space-x-4">
+                <div className="lg:mb-0 flex justify-center space-x-4">
                     {icons.map((Icon, i) => (
                         <Icon key={i} />
                     ))}
                 </div>
 
                 <h4 className="text-lg">Or send me an email!</h4>
-                <Button onClick={() => setIsOpen(true)}>Send Message</Button>
+                <div>
+                    <Button onClick={() => setIsOpen(true)}>Send Message</Button>
+                </div>
             </footer>
         </>
     );
