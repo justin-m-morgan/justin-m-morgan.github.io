@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Card from './Card';
 import ContactForm from './ContactForm';
 import Modal from './Modal';
 import { Dev, Github, Linkedin, Twitter } from './SocialMedia';
@@ -28,7 +27,7 @@ const Footer = () => {
                     <ContactForm />
                 </Modal>
 
-                <h4 className="text-lg mt-0  text-blueGray-600">Find me on any of these platforms</h4>
+                <h4 className="text-center text-lg text-gray-50">Find me on any of these platforms</h4>
 
                 <div className="lg:mb-0 flex space-x-4">
                     {icons.map((Icon, i) => (
