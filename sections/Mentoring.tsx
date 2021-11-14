@@ -14,6 +14,13 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
     {
+        name: 'Carlo Mandelli',
+        avatar: 'https://avatars3.githubusercontent.com/u/5462153?v=4',
+        review: "Thank you very much for all the time you spent teaching me new concepts. Best mentoring session I've ever got! Really hope to meet you again on next exercises.",
+        feedbackLink:
+            'https://exercism.org/profiles/justin-m-morgan/testimonials?uuid=ed2e2845-ea53-4991-b65b-6a81061e6c0f',
+    },
+    {
         name: 'Guty Santana',
         avatar: 'https://avatars3.githubusercontent.com/u/1734773?v=4',
         review: 'Justin explains things in an easy way, he takes the time to point you in the right direction, no matter how new to Elixir you are.',
@@ -44,6 +51,13 @@ const testimonials: Testimonial[] = [
         review: 'Justin is a great mentor - patient and thoughtful. The references he shared for further reading were just wonderful. Thank you!',
         feedbackLink:
             'https://exercism.org/profiles/justin-m-morgan/testimonials?uuid=003d59c8-688d-4bcf-9b8d-7397caee4e5f',
+    },
+    {
+        name: 'mon4ter',
+        avatar: 'https://avatars1.githubusercontent.com/u/3389804',
+        review: "Learned more from the discussion than from the exercise itself. That's what I call mentoring!",
+        feedbackLink:
+            'https://exercism.org/profiles/justin-m-morgan/testimonials?uuid=a93ca37a-d561-46e6-811e-3a63db7e0009',
     },
 ];
 
