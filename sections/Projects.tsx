@@ -1,13 +1,13 @@
-import { ClockAppPreview } from '../pages/projects/clock-app';
-import { OrderSummaryPreview } from '../pages/projects/order-summary';
-import { JobBoardPreview } from '../pages/projects/job-board';
+import { ClockAppProject } from '../pages/projects/clock-app';
+import { JobBoardProject } from '../pages/projects/job-board';
+import { OrderSummaryProject } from '../pages/projects/order-summary';
 import ProjectPreview from './ProjectPreview';
 
 const Projects = () => (
     <div className="md:space-y-24">
-        <ProjectPreview {...ClockAppPreview} />
-        <ProjectPreview {...JobBoardPreview} />
-        <ProjectPreview {...OrderSummaryPreview} />
+        <ProjectPreview {...ClockAppProject} />
+        <ProjectPreview {...JobBoardProject} />
+        <ProjectPreview {...OrderSummaryProject} />
     </div>
 );
 

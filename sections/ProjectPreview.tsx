@@ -1,32 +1,7 @@
 import Image from 'next/image';
 import { ButtonInternalLink, ButtonLink } from '../components/Button';
-
-interface VideoPlayerProps {
-    className?: string;
-    src: string;
-}
-const VideoPlayer = ({ className, src }: VideoPlayerProps) => (
-    <video
-        src={src}
-        playsInline={true}
-        preload="auto"
-        autoPlay={true}
-        loop={true}
-        muted={true}
-        className={className}
-    ></video>
-);
-export interface ProjectPreviewProps {
-    caseStudyPath: string;
-    name: string;
-    ghRepoUrl: string;
-    hostedUrl: string;
-    previewVideoUrl?: string;
-    previewImgUrl: string;
-    previewImgHeight: number;
-    previewImgWidth: number;
-    description: string;
-}
+import VideoPlayer from '../components/VideoPlayer';
+import { ProjectProps } from '../pages/projects/project.interface';
 
 const ProjectPreview = ({
     caseStudyPath,
@@ -38,7 +13,7 @@ const ProjectPreview = ({
     previewImgHeight,
     previewImgWidth,
     description,
-}: ProjectPreviewProps) => (
+}: ProjectProps) => (
     <div className="grid lg:grid-cols-2 gap-8 mb-8 max-w-lg lg:max-w-full mx-auto">
         <div className="rounded-lg overflow-hidden  flex justify-center items-center">
             {previewVideoUrl ? (

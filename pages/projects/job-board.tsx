@@ -1,7 +1,8 @@
+import ProjectCaseStudy from '../../components/ProjectCaseStudy';
 import UnderConstruction from '../../components/UnderConstruction';
-import { ProjectPreviewProps } from '../../sections/ProjectPreview';
+import { ProjectProps } from './project.interface';
 
-export const JobBoardPreview: ProjectPreviewProps = {
+export const JobBoardProject: ProjectProps = {
     caseStudyPath: 'job-board',
     name: 'Filtering Job Board',
     ghRepoUrl: 'https://github.com/justin-m-morgan/fem_static-job-listings',
@@ -12,12 +13,13 @@ export const JobBoardPreview: ProjectPreviewProps = {
     previewImgWidth: 1204,
     description:
         'A job board with the ability to apply and remove cumulative filters. A challenge project from Frontend Mentors. Implemented from a Figma design file.',
+    techUsed: [['react', 'ReactJS']],
 };
 
 export default function ClockApp() {
     return (
-        <div>
+        <ProjectCaseStudy {...JobBoardProject}>
             <UnderConstruction />
-        </div>
+        </ProjectCaseStudy>
     );
 }

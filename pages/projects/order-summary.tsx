@@ -1,7 +1,8 @@
+import ProjectCaseStudy from '../../components/ProjectCaseStudy';
 import UnderConstruction from '../../components/UnderConstruction';
-import { ProjectPreviewProps } from '../../sections/ProjectPreview';
+import { ProjectProps } from './project.interface';
 
-export const OrderSummaryPreview: ProjectPreviewProps = {
+export const OrderSummaryProject: ProjectProps = {
     caseStudyPath: 'order-summary',
     name: 'Order Summary Card',
     ghRepoUrl: 'https://github.com/justin-m-morgan/fem_order-summary-component',
@@ -10,12 +11,13 @@ export const OrderSummaryPreview: ProjectPreviewProps = {
     previewImgHeight: 1274,
     previewImgWidth: 1361,
     description: 'A purely static implementation of a design challenge from Frontend Mentors.',
+    techUsed: [],
 };
 
 export default function ClockApp() {
     return (
-        <div>
+        <ProjectCaseStudy {...OrderSummaryProject}>
             <UnderConstruction />
-        </div>
+        </ProjectCaseStudy>
     );
 }
