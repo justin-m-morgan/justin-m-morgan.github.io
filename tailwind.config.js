@@ -2,6 +2,14 @@ module.exports = {
     purge: ['./pages/**/*.{js,ts,jsx,tsx}', './sections/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
     darkMode: false, // or 'media' or 'class'
     theme: {
+        container: {
+            center: true,
+            DEFAULT: '1rem',
+            sm: '1rem',
+            md: '2rem',
+            lg: '9rem',
+            xl: '12rem',
+        },
         extend: {
             animation: {
                 fly: 'fly 5s ease-in-out infinite',
