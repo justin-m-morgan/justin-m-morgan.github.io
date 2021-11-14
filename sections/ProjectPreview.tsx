@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { ButtonInternalLink, ButtonLink } from '../components/Button';
 import VideoPlayer from '../components/VideoPlayer';
-import { ProjectProps } from '../pages/projects/project.interface';
+import { ProjectProps } from '../interfaces/project.interface';
 
 const ProjectPreview = ({
     caseStudyPath,

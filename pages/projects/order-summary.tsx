@@ -1,6 +1,6 @@
 import ProjectCaseStudy from '../../components/ProjectCaseStudy';
 import UnderConstruction from '../../components/UnderConstruction';
-import { ProjectProps } from './project.interface';
+import { ProjectProps } from '../../interfaces/project.interface';
 
 export const OrderSummaryProject: ProjectProps = {
     caseStudyPath: 'order-summary',

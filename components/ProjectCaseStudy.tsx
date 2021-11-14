@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { ExternalLink, Github } from './SocialMedia';
 import VideoPlayer from './VideoPlayer';
-import { ProjectProps } from '../pages/projects/project.interface';
+import { ProjectProps } from '../interfaces/project.interface';
 import { SymbolIcon } from './IconSymbols';
 
 interface ProjectCaseStudyProps extends ProjectProps {
