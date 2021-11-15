@@ -35,8 +35,8 @@ const ProjectPreview = ({
         <div className="text-center flex flex-col place-content-center">
             <h3 className="text-4xl font-bold pb-4">{name}</h3>
             <p className="pb-8">{description}</p>
-            <div className="flex flex-col md:flex-row justify-center items-center space-x-4 pb-8">
-                <ButtonLink to={ghRepoUrl} className="flex items-center">
+            <div className="flex flex-col md:flex-row justify-center md:items-center md:space-x-4 space-y-2 pb-8">
+                <ButtonLink to={ghRepoUrl} className="flex justify-center items-center">
                     <Github url="#" className="h-6 pr-3" />
                     <span>Github Repo</span>
                 </ButtonLink>
