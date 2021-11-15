@@ -35,17 +35,19 @@ const ProjectPreview = ({
         <div className="text-center flex flex-col place-content-center">
             <h3 className="text-4xl font-bold pb-4">{name}</h3>
             <p className="pb-8">{description}</p>
-            <div className="grid md:grid-cols-3 justify-center md:items-center md:space-x-4 space-y-2 pb-8">
+            <div className="grid md:grid-cols-3 justify-center items-center gap-8 pb-8">
                 <ButtonLink to={ghRepoUrl} className="flex justify-center items-center">
-                    <Github url="#" className="h-6 pr-3" />
                     <span>Github Repo</span>
+                    <SymbolIcon icon="github" className="pl-2 h-6 w-6 fill-current p-0" />
+                </ButtonLink>
+
+                <ButtonLink to={hostedUrl} className="flex justify-center items-center">
+                    Live Site
+                    <SymbolIcon icon="external_link" className="pl-2 h-6 w-6 fill-current p-0" />
                 </ButtonLink>
                 <ButtonInternalLink to={`/projects/${caseStudyPath}`} className="flex justify-center items-center">
                     Case Study &rarr;
                 </ButtonInternalLink>
-                <ButtonLink to={hostedUrl} className="flex justify-center items-center">
-                    Live Site
-                </ButtonLink>
             </div>
             <div className="flex flex-col items-center">
                 <h4 className="text-lg font-bold pb-4">Technology Used</h4>
