@@ -20,8 +20,9 @@ const Footer = () => {
     return (
         <footer
             id="footer"
-            className="container pb-24 lg:pb-48 
-                grid gap-4 md:grid-cols-2 md:grid-rows-2 grid-flow-col
+            className="container md:pb-24 lg:pb-48 
+                flex flex-col
+                md:grid gap-4 md:grid-cols-2 md:grid-rows-2 grid-flow-col
                 text-center"
         >
             <Modal title="Contact Me!" isOpen={isOpen} setIsOpen={setIsOpen}>
