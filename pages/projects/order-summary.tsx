@@ -1,5 +1,4 @@
 import ProjectCaseStudy from '../../components/ProjectCaseStudy';
-import UnderConstruction from '../../components/UnderConstruction';
 import { ProjectProps } from '../../interfaces/project.interface';
 
 export const OrderSummaryProject: ProjectProps = {
@@ -12,12 +11,9 @@ export const OrderSummaryProject: ProjectProps = {
     previewImgWidth: 1361,
     description: 'A purely static implementation of a design challenge from Frontend Mentors.',
     techUsed: [],
+    caseStudy: [],
 };
 
 export default function ClockApp() {
-    return (
-        <ProjectCaseStudy {...OrderSummaryProject}>
-            <UnderConstruction />
-        </ProjectCaseStudy>
-    );
+    return <ProjectCaseStudy {...OrderSummaryProject} />;
 }

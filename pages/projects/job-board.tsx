@@ -1,5 +1,4 @@
 import ProjectCaseStudy from '../../components/ProjectCaseStudy';
-import UnderConstruction from '../../components/UnderConstruction';
 import { ProjectProps } from '../../interfaces/project.interface';
 
 export const JobBoardProject: ProjectProps = {
@@ -14,12 +13,9 @@ export const JobBoardProject: ProjectProps = {
     description:
         'A job board with the ability to apply and remove cumulative filters. A challenge project from Frontend Mentors. Implemented from a Figma design file.',
     techUsed: [['react', 'ReactJS']],
+    caseStudy: [],
 };
 
 export default function ClockApp() {
-    return (
-        <ProjectCaseStudy {...JobBoardProject}>
-            <UnderConstruction />
-        </ProjectCaseStudy>
-    );
+    return <ProjectCaseStudy {...JobBoardProject} />;
 }
