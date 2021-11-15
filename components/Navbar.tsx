@@ -8,10 +8,10 @@ const Logo = () => (
 );
 
 const links = [
-    { to: '#projects', label: 'Projects' },
-    { to: '#mentoring', label: 'Mentoring' },
-    { to: '#opensource', label: 'Open Source' },
-    { to: '#technicalwriting', label: 'Technical Writing' },
+    { to: '/#projects', label: 'Projects' },
+    { to: '/#mentoring', label: 'Mentoring' },
+    { to: '/#opensource', label: 'Open Source' },
+    { to: '/#technicalwriting', label: 'Technical Writing' },
 ];
 
 interface MainItemsProps {
