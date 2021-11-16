@@ -5,7 +5,7 @@ export const Portfolio: ProjectProps = {
     name: 'Portfolio',
     ghRepoUrl: 'https://github.com/justin-m-morgan/justin-m-morgan.github.io',
     hostedUrl: 'https://justinmorgan.ca/',
-    previewVideoUrl: '/imgs/projects/Portfolio/Portfolio.mp4',
+    previewVideoUrl: '/imgs/projects/Portfolio/portfolio.mp4',
     previewImgUrl: '/imgs/projects/Portfolio/portfolio.jpg',
     previewImgHeight: 373,
     previewImgWidth: 800,
