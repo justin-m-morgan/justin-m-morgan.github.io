@@ -37,4 +37,15 @@ const Home: NextPage = () => {
     );
 };
 
+// TODO: Apply updated articles (view-count) to pre-rendering pipeline
+// export async function getStaticProps() {
+//     const articles = await updateArticlesViewCount(featuredArticles);
+
+//     return {
+//         props: {
+//             articles,
+//         },
+//     };
+// }
+
 export default Home;
