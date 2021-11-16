@@ -38,5 +38,17 @@ export const Portfolio: ProjectProps = {
                 "Headless UI is a component library which is without styling-decisions. This makes it a perfect match for use with TailwindCSS, as headless can handle all the behaviours and accessibility concerns but the look and feel can perfectly mesh with your project's custom styles.",
             ],
         },
+        {
+            heading: 'Husky CI',
+            paragraphs: [
+                'Using Husky CI along with git-staged enforces passing of prettier and es-lint prior to committing.',
+            ],
+        },
+        {
+            heading: 'Vercel CD',
+            paragraphs: [
+                "Vercel's offers GitHub hook integrations, deploying new commits to the main branch. Additionally, Vercel offers preview deploys on a separate URL.",
+            ],
+        },
     ],
 };
