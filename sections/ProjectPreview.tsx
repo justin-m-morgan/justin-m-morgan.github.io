@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { ButtonInternalLink, ButtonLink } from '../components/Button';
 import HoverIcon from '../components/HoverIcon';
 import { SymbolIcon } from '../components/IconSymbols';
-import { Github } from '../components/SocialMedia';
 import VideoPlayer from '../components/VideoPlayer';
 import { ProjectProps } from '../interfaces/project.interface';
 
