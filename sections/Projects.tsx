@@ -1,10 +1,10 @@
-import { ClockAppProject } from '../pages/projects/clock-app';
-import { JobBoardProject } from '../pages/projects/job-board';
-import { OrderSummaryProject } from '../pages/projects/order-summary';
+import { ClockAppProject, JobBoardProject, OrderSummaryProject, Portfolio } from '../data/projects';
+
 import ProjectPreview from './ProjectPreview';
 
 const Projects = () => (
     <div className="md:space-y-24">
+        <ProjectPreview {...Portfolio} />
         <ProjectPreview {...ClockAppProject} />
         <ProjectPreview {...JobBoardProject} />
         <ProjectPreview {...OrderSummaryProject} />
