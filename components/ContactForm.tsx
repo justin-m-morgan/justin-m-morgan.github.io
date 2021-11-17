@@ -42,16 +42,16 @@ const Form = ({ submit, error }: FormProps) => (
 );
 
 const InFlight = () => (
-    <div className="flex flex-col">
-        <FontAwesomeIcon icon={faTelegramPlane} className="h-48 animate-fly" />
-        <p className="text-4xl font-bold text-center">Message in Flight</p>
+    <div className="flex flex-col space-y-4 py-24">
+        <FontAwesomeIcon icon={faTelegramPlane} className="h-24 animate-fly" />
+        <p className="text-center text-4xl font-bold">Message in Flight</p>
     </div>
 );
 
 const SuccessfulSubmission = () => (
-    <div className="flex flex-col text-center space-y-4 py-24">
+    <div className="flex flex-col space-y-4 py-24">
         <FontAwesomeIcon icon={faCheckCircle} className="h-24 text-green-500" />
-        <p className="text-xl font-bold">Awesome! Thanks for reaching out.</p>
+        <p className="text-center text-4xl font-bold">Awesome! Thanks for reaching out.</p>
     </div>
 );
 

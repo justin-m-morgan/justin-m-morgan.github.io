@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 
 interface ModalProps {
@@ -7,7 +7,7 @@ interface ModalProps {
     isOpen: boolean;
     setIsOpen: (val: boolean) => void;
 }
-const Modal = ({ children, title, isOpen, setIsOpen }: ModalProps) => (
+const Modal = ({ children, isOpen, setIsOpen }: ModalProps) => (
     <Transition appear show={isOpen} as={Fragment}>
         <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="bg-gray-50 rounded-lg ">
             <div className="min-h-screen px-4 text-center transform -translate-y-full">
