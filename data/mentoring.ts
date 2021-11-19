@@ -17,7 +17,7 @@ export const testimonials: Testimonial[] = [
     },
     {
         name: 'Guty Santana',
-        avatar: 'https://avatars3.githubusercontent.com/u/1734773?v=4',
+        avatar: 'https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcnh0IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a3c73b965d13b8e4a762e03b1e82c4d6f3cd2745/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RG5Sb2RXMWlibUZwYkVraURUSXdNSGd5TURCZUJqc0dWRG9MWlhoMFpXNTBTU0lNTWpBd2VESXdNQVk3QmxRNkRHZHlZWFpwZEhrNkMyTmxiblJsY2c9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--b3b0168d54801c89c14d4b46b31b851e450874c6/avatar.jpg',
         review: 'Justin explains things in an easy way, he takes the time to point you in the right direction, no matter how new to Elixir you are.',
         feedbackLink:
             'https://exercism.org/profiles/justin-m-morgan/testimonials?uuid=889717ae-7d2a-41cd-9e10-36c5270f01f8',
@@ -39,6 +39,15 @@ export const testimonials: Testimonial[] = [
         review: 'His response was prompt, and the help was insightful.',
         feedbackLink:
             'https://exercism.org/profiles/justin-m-morgan/testimonials?uuid=16236079-58be-4559-9bb6-7370d38e8d5c',
+    },
+    {
+        name: 'Kah Goh',
+        avatar: 'https://avatars.githubusercontent.com/u/773175',
+        position: 'Software Engineer (Thales)',
+        linkedIn: 'https://www.linkedin.com/in/kah-goh-911ab39/',
+        review: 'Thanks for teaching me another way!',
+        feedbackLink:
+            'https://exercism.org/profiles/justin-m-morgan/testimonials?uuid=cc42af7d-ad13-4ad3-bd23-b20f291959af',
     },
     {
         name: 'elvisds',
