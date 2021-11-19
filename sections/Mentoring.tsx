@@ -36,7 +36,7 @@ const Testimonial = ({ avatar, feedbackLink, linkedIn, name, position, review }:
 );
 
 const Mentoring = () => (
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="flex flex-col justify-center items-center lg:text-xl lg:text-center space-y-4 ">
             <p>
                 Exercism is a code teaching platform for over 50 programming languages. It teaches languages by way of a

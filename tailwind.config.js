@@ -8,7 +8,7 @@ module.exports = {
             sm: '1rem',
             md: '2rem',
             lg: '9rem',
-            xl: '12rem',
+            xl: '10rem',
         },
         extend: {
             animation: {
@@ -22,7 +22,7 @@ module.exports = {
                 },
             },
             maxWidth: {
-                '8xl': '88rem',
+                '8xl': '92rem',
             },
         },
     },
