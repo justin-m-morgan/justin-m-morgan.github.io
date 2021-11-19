@@ -38,4 +38,17 @@ export const featuredArticles: DevToArticle[] = [
         canonical_url: 'https://dev.to/justin_m_morgan/a-deeper-dive-into-function-arity-with-a-focus-on-javascript-ae',
         reading_time_minutes: 10,
     },
+    {
+        id: 902453,
+        title: 'Loops, Array Methods, and Recursion',
+        description:
+            '"Loops" are an extremely powerful abstraction in computing. Loops can often be error prone and reimplement the same patterns again and again. We will investigate another approach: array-methods/functions and recursion',
+        comments_count: 0,
+        public_reactions_count: 10,
+        page_views_count: 54,
+        positive_reactions_count: 10,
+        tag_list: ['javascript', 'functional'],
+        canonical_url: 'https://dev.to/justin_m_morgan/loops-array-methods-and-recursion-45ng',
+        reading_time_minutes: 15,
+    },
 ];
