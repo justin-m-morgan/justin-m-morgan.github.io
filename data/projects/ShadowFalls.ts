@@ -17,12 +17,19 @@ export const ShadowFalls: ProjectProps = {
         ['tailwind', 'Tailwind'],
     ],
     caseStudy: [
-        // {
-        //     heading: 'CSS Modules',
-        //     paragraphs: [
-        //         'This app employs CSS Modules as its styling solution. This decision was made to strengthen my skills at architecting a project wide CSS solution.',
-        //         'CSS Modules allow for component scoped styles. This lessens the need for CSS architectural patterns (such as BEM), as style definitions generally have to be explicitly shared (unlike ordinary global CSS patterns).',
-        //     ],
-        // },
+        {
+            heading: 'Near SPA-level experience w/ Phoenix LiveView',
+            paragraphs: [
+                'Phoenix LiveView is a relatively recent addition to the Phoenix framework (only being included in the core package since the middle of 2021). It allows for component driven development of user interfaces coupled with the advantages of modularized dynamic updates familiar to those in Javascript-framework communities.',
+                'Unlike a typical Javascript framework, initial rendering occurs on the server, dynamic regions marked for precise modification, and state maintained via a persistent web-socket connection between client and server.',
+            ],
+        },
+        {
+            heading: 'Theme-driven styling w/ Tailwind',
+            paragraphs: [
+                'TailwindCSS approaches application-styling with "utility classes"--small, composable style snippets that encourage consistency across an application and can be updated via a global configuration file.',
+                'To avoid "class-soup" throughout the code base, this project attempts to extract generic UI components for consumption/composition in the domain components.',
+            ],
+        },
     ],
 };
