@@ -23,7 +23,7 @@ const ProjectCaseStudy = ({
     techUsed,
     caseStudy,
 }: ProjectProps) => (
-    <section className="px-2 mt-12 pb-12 md:pb-24 container max-w-8xl  mx-auto flex flex-col md:grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+    <section className="px-2 mt-12 pb-12 md:pb-24 md:px-6 container max-w-8xl  mx-auto flex flex-col md:grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
         <Intro ghRepoUrl={ghRepoUrl} hostedUrl={hostedUrl} name={name} description={description} />
         <VideoPreview
             name={name}
@@ -62,7 +62,11 @@ const VideoPreview = ({
 }: VideoPreviewProps) => (
     <div className="rounded-lg overflow-hidden  flex justify-center items-center">
         {previewVideoUrl ? (
-            <VideoPlayer src={previewVideoUrl} className="rounded-lg overflow-hidden lg:w-full" />
+            <VideoPlayer
+                src={previewVideoUrl}
+                poster={previewImgUrl}
+                className="rounded-lg overflow-hidden lg:w-full"
+            />
         ) : (
             <Image
                 src={previewImgUrl}

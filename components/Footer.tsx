@@ -20,7 +20,7 @@ const Footer = () => {
     return (
         <footer
             id="footer"
-            className="container pb-16 md:pb-24 lg:pb-48 
+            className="md:px-6 container pb-16 md:pb-24 lg:pb-48 
                 flex flex-col
                 md:grid gap-4 md:grid-cols-2 md:grid-rows-2 grid-flow-col
                 text-center"

@@ -56,7 +56,7 @@ function Navbar({}: {}) {
         <nav className="sticky top-0 z-10 filter drop-shadow-2xl">
             <div className="text-white w-screen">
                 <div className="relative bg-gray-900">
-                    <div className="px-2 container max-w-8xl py-6 flex w-full justify-between items-center">
+                    <div className="px-2 md:px-6 container max-w-8xl py-6 flex w-full justify-between items-center">
                         <Logo />
                         <MainItems />
 
