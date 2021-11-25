@@ -7,7 +7,9 @@ const IndexIntro = () => (
         </p>
 
         <div className="flex justify-center md:justify-start mt-8 md:mt-12">
-            <ButtonInternalLink to="#footer">Contact Me</ButtonInternalLink>
+            <ButtonInternalLink to="#footer" className="px-8 font-bold md:text-3xl md:px-8 md:py-4">
+                Contact Me
+            </ButtonInternalLink>
         </div>
     </>
 );
