@@ -45,7 +45,7 @@ export const featuredArticles: DevToArticle[] = [
             '"Loops" are an extremely powerful abstraction in computing. Loops can often be error prone and reimplement the same patterns again and again. We will investigate another approach: array-methods/functions and recursion',
         comments_count: 0,
         public_reactions_count: 10,
-        page_views_count: 215,
+        page_views_count: 266,
         positive_reactions_count: 10,
         tag_list: ['javascript', 'functional'],
         canonical_url: 'https://dev.to/justin_m_morgan/loops-array-methods-and-recursion-45ng',
