@@ -5,8 +5,8 @@ export const ProductFeedback: ProjectProps = {
     name: 'Product Feedback Board',
     ghRepoUrl: 'https://github.com/justin-m-morgan/product-feedback',
     hostedUrl: 'https://fem-product-feedback.netlify.app/',
-    previewVideoUrl: '/imgs/projects/ProductFeedback/storybook.mp4',
-    previewImgUrl: '/imgs/projects/ProductFeedback/storybook.jpg',
+    previewVideoUrl: '/imgs/projects/ProductFeedback/Storybook.mp4',
+    previewImgUrl: '/imgs/projects/ProductFeedback/Storybook.jpg',
     previewImgHeight: 944,
     previewImgWidth: 957,
     description:
