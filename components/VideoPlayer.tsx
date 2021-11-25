@@ -1,8 +1,9 @@
 interface VideoPlayerProps {
     className?: string;
     src: string;
+    poster: string;
 }
-const VideoPlayer = ({ className, src }: VideoPlayerProps) => (
+const VideoPlayer = ({ className, src, poster }: VideoPlayerProps) => (
     <video
         src={src}
         playsInline={true}
@@ -10,6 +11,7 @@ const VideoPlayer = ({ className, src }: VideoPlayerProps) => (
         autoPlay={true}
         loop={true}
         muted={true}
+        poster={poster}
         className={className}
     ></video>
 );
