@@ -1,8 +1,9 @@
 import Card from '../components/Card';
+import { SymbolIcon } from '../components/IconSymbols';
 
 interface Ticket {
     description: string;
-    ghStatus: 'In Progress' | 'Merged';
+    ghStatus: 'In Progress' | 'In Review' | 'Merged';
     issueUrl: string;
 }
 
@@ -22,6 +23,11 @@ const contributions: Contribution[] = [
                 description: 'Integration Guide',
                 ghStatus: 'Merged',
                 issueUrl: 'https://github.com/surface-ui/surface_site/pull/53',
+            },
+            {
+                description: 'Bulma Components',
+                ghStatus: 'In Review',
+                issueUrl: 'https://github.com/surface-ui/surface_bulma/pull/26',
             },
             // { description: 'Bootstrap Script Guide', ghStatus: 'In Progress', issueUrl: '' },
         ],
@@ -59,12 +65,14 @@ const OpenSource = () => (
                     </div>
                     <ul className="space-y-2">
                         {contribution.tickets.map(({ description, ghStatus, issueUrl }) => (
-                            <li key={description} className="lg:flex justify-between">
-                                &rarr; {description}
-                                <a href={issueUrl} target="_blank" rel="noreferrer" className="block">
-                                    <i className="fab fa-github"></i> Issue
-                                </a>
-                            </li>
+                            <a key={issueUrl} href={issueUrl} target="_blank" rel="noreferrer" className="block">
+                                <li key={description} className="flex justify-between items-center text-sm">
+                                    &rarr; {description}
+                                    <span className="flex items-center">
+                                        <SymbolIcon icon="github" className="h-4 w-4 fill-current mr-2" /> Issue
+                                    </span>
+                                </li>
+                            </a>
                         ))}
                     </ul>
                 </Card>
