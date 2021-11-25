@@ -37,7 +37,7 @@ const Testimonial = ({ avatar, feedbackLink, linkedIn, name, position, review }:
 
 const Mentoring = () => (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="flex flex-col justify-center items-center lg:text-xl lg:text-center space-y-4 ">
+        <div className="flex flex-col justify-center items-center space-y-4 ">
             <p>
                 Exercism is a code teaching platform for over 50 programming languages. It teaches languages by way of a
                 currated curriculum of coding challenges.
@@ -52,7 +52,7 @@ const Mentoring = () => (
             <Testimonial key={testimonial.feedbackLink} {...testimonial} />
         ))}
 
-        <div className="px-8 lg:text-xl text-center flex flex-col justify-center place-items-center">
+        <div className="px-8 text-center flex flex-col justify-center place-items-center">
             <p className="pb-4">
                 The full collection of testimonials and further details on my activity (including challenge maintenance
                 and contributed documentation) on the platform can be found on my public profile.
