@@ -3,7 +3,7 @@ import { ProjectProps } from '../../interfaces/project.interface';
 export const ShadowFalls: ProjectProps = {
     caseStudyPath: 'shadow-falls',
     name: 'Shadow Falls Campground',
-    ghRepoUrl: 'https://github.com/justin-m-morgan/shadowfallscampground',
+    ghRepoUrl: 'https://github.com/justin-m-morgan/shadowfalls',
     hostedUrl: 'https://shadowfallscampground.herokuapp.com',
     previewVideoUrl: '/imgs/projects/ShadowFalls/IndexPage.mp4',
     previewImgUrl: '/imgs/projects/ShadowFalls/IndexPage.jpg',
